@@ -22,6 +22,14 @@ All scripts are located in the [`scripts`](https://github.com/dend/windows-dev-b
 | `customization.bat` | A bunch of customizations to make the OS look simple and efficient. |
 | `privacy.bat`       | Settings that enhance the privacy settings of the OS.               |
 
+### Settings
+
+All settings are located in the [`settings`](https://github.com/dend/windows-dev-box/tree/main/settings) folder.
+
+| File | Description |
+|:-----|:------------|
+| `Preferences.sublime-settings` | Settings for Sublime Text 4. |
+
 ## FAQ
 
 ### One of your scripts didn't work properly. What do I do?
