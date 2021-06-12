@@ -1,2 +1,10 @@
-# windows-dev-box
-💻 Scripts and relevant configuration to set up your Windows development box.
+<div align="center">
+	<img alt="Project Logo" src="images/logo.png" width="200" height="200" />
+	<h1>💻 Windows Developer Box Automation</h1>
+	<p>
+		<b>Anything and everything to make it easy to set up a Windows developer box from scratch.</b>
+	</p>
+	<br>
+	<br>
+	<br>
+</div>
