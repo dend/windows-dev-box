@@ -1,0 +1,20 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_face": "Cascadia Code",
+	"font_size": 13,
+	"spell_check": true,
+	"draw_minimap_border": true,
+	"highlight_line": true,
+	"ensure_newline_at_eof_on_save": true,
+	"shift_tab_unindent": true,
+	"bold_folder_labels": true,
+	"adaptive_dividers": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"hardware_acceleration": "opengl",
+	"added_words":
+	[
+		"customizations"
+	],
+}
