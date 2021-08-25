@@ -55,5 +55,11 @@ reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /f /v NoUseStoreOpen
 :: Don't notify about new apps in Start Menu.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v Start_NotifyNewApps /t REG_DWORD /d 0
 
-:: Hide "Get Help" from Start Menu
+:: Hide "Get Help" from Start Menu.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v Start_ShowHelp /t REG_DWORD /d 0
+
+:: Set the Edge new tab to be a blank page.
+reg add "HKLM\Software\Policies\Microsoft\Edge" /f /v NewTabPageLocation /t REG_SZ /d "about:blank"
+
+:: Disable any kinds of promotional materials from Edge.
+reg add "HKLM\Software\Policies\Microsoft\Edge" /f /v ShowRecommendationsEnabled /t REG_DWORD /d 0
