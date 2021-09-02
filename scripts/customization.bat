@@ -63,3 +63,6 @@ reg add "HKLM\Software\Policies\Microsoft\Edge" /f /v NewTabPageLocation /t REG_
 
 :: Disable any kinds of promotional materials from Edge.
 reg add "HKLM\Software\Policies\Microsoft\Edge" /f /v ShowRecommendationsEnabled /t REG_DWORD /d 0
+
+:: Disable random software from being installed with your drivers.
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Installer" /f /v DisableCoInstallers /t REG_DWORD /d 1
