@@ -66,3 +66,7 @@ reg add "HKLM\Software\Policies\Microsoft\Edge" /f /v ShowRecommendationsEnabled
 
 :: Disable random software from being installed with your drivers.
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Installer" /f /v DisableCoInstallers /t REG_DWORD /d 1
+
+:: Prevent Windows Update from installing PC Health Check
+reg add "HKLM\SOFTWARE\Microsoft\PCHC" /f /v PreviousUninstall /t REG_DWORD /d 00000001
+reg add "HKLM\SOFTWARE\Microsoft\PCHealthCheck" /f /v installed  /t REG_DWORD /d 00000001
