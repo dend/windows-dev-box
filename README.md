@@ -9,6 +9,8 @@
 	<br>
 </div>
 
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://den.dev/ukraine)
+
 This repository contains everything that I use to automate my Windows system setup. I had to re-install the OS on my developer box more than once, and every single time I had to set it up just right in an effort to make it work and behave the way I wanted it to. At some point I just decided to automate as much of that process as possible - this repository contains those pieces of automation.
 
 ## Content
