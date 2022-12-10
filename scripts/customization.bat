@@ -70,3 +70,9 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Installer" /f /v 
 :: Prevent Windows Update from installing PC Health Check
 reg add "HKLM\SOFTWARE\Microsoft\PCHC" /f /v PreviousUninstall /t REG_DWORD /d 00000001
 reg add "HKLM\SOFTWARE\Microsoft\PCHealthCheck" /f /v installed  /t REG_DWORD /d 00000001
+
+:: Disable Windows Consumer Features
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /f /v DisableWindowsConsumerFeatures /t REG_DWORD /d 00000001
+
+:: Disable silent app installs
+reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v SilentInstalledAppsEnabled /t REG_DWORD /d 00000000
