@@ -32,8 +32,8 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Feeds" /f /v ShellFeedsT
 :: Show detailed information on startup.
 reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\System" /f /v VerboseStatus /t REG_DWORD /d 1
 
-:: Disable the notification center.
-reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /f /v DisableNotificationCenter /t REG_DWORD /d 1
+:: Disable the notification center. Normally you want to keep this on to track all inbound Windows notifications.
+:: reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /f /v DisableNotificationCenter /t REG_DWORD /d 1
 
 :: Disable autorun.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" /f /v DisableAutoplay /t REG_DWORD /d 1
