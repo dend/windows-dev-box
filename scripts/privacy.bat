@@ -31,3 +31,15 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v
 
 :: Disable activity history.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /f /v PublishUserActivities /t REG_DWORD /d 0
+
+:: Disable telemetry completely.
+reg add "HKLM\Software\Policies\Microsoft\Windows\DataCollection" /f /v AllowTelemetry /t REG_DWORD /d 0
+
+:: Don't keep history of recently opened documents.
+reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v NoRecentDocsHistory /t REG_DWORD /d 1
+
+:: Remove recently added apps from Start.
+reg add "HKLM\Software\Policies\Microsoft\Windows\Explorer" /f /v HideRecentlyAddedApps /t REG_DWORD /d 1
+
+:: Remove frequent programs from Start.
+reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v NoStartMenuMFUprogramsList /t REG_DWORD /d 1

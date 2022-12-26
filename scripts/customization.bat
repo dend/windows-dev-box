@@ -26,7 +26,7 @@ reg add "HKCR\Applications\photoviewer.dll\shell\print" /f
 reg add "HKCR\Applications\photoviewer.dll\shell\print\command" /f /ve /t REG_EXPAND_SZ /d "%SystemRoot%\System32\rundll32.exe \"%ProgramFiles%\Windows Photo Viewer\PhotoViewer.dll\", ImageView_Fullscreen %1"
 reg add "HKCR\Applications\photoviewer.dll\shell\print\DropTarget" /f /v Clsid /t REG_SZ /d "{FFE2A43C-56B9-4bf5-9A79-CC6D4285608A}"
 
-:: Disable the News and Interests feed.
+:: Disable the News and Interests feed in the taskbar.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Feeds" /f /v ShellFeedsTaskbarViewMode /t REG_DWORD /d 2
 
 :: Show detailed information on startup.
@@ -38,17 +38,17 @@ reg add "HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\Sys
 :: Disable autorun.
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers" /f /v DisableAutoplay /t REG_DWORD /d 1
 
-:: Disable the OS writing "Last Accessed"
+:: Disable the OS writing "Last Accessed."
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\FileSystem" /f /v NtfsDisableLastAccessUpdate /t REG_DWORD /d 80000001
 
-:: Disable Microsoft Store pinning to taskbar
+:: Disable Microsoft Store pinning to taskbar.
 reg add "HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer" /f /v NoPinningStoreToTaskbar /t REG_DWORD /d 1
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer" /f /v NoPinningStoreToTaskbar /t REG_DWORD /d 1
 
 :: Hide Edge button in IE.
 reg add "HKCU\SOFTWARE\Policies\Microsoft\Internet Explorer\Main" /f /v HideNewEdgeButton /t REG_DWORD /d 1
 
-:: Remove "Look for app in the Store"
+:: Remove "Look for app in the Store."
 reg add "HKLM\Software\Policies\Microsoft\Windows\Explorer" /f /v NoUseStoreOpenWith /t REG_DWORD /d 1
 reg add "HKCU\Software\Policies\Microsoft\Windows\Explorer" /f /v NoUseStoreOpenWith /t REG_DWORD /d 1
 
@@ -67,12 +67,39 @@ reg add "HKLM\Software\Policies\Microsoft\Edge" /f /v ShowRecommendationsEnabled
 :: Disable random software from being installed with your drivers.
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Installer" /f /v DisableCoInstallers /t REG_DWORD /d 1
 
-:: Prevent Windows Update from installing PC Health Check
+:: Prevent Windows Update from installing PC Health Check.
 reg add "HKLM\SOFTWARE\Microsoft\PCHC" /f /v PreviousUninstall /t REG_DWORD /d 00000001
 reg add "HKLM\SOFTWARE\Microsoft\PCHealthCheck" /f /v installed  /t REG_DWORD /d 00000001
 
-:: Disable Windows Consumer Features
+:: Disable Windows Consumer Features.
 reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent" /f /v DisableWindowsConsumerFeatures /t REG_DWORD /d 00000001
 
-:: Disable silent app installs
+:: Disable silent app installs.
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager" /f /v SilentInstalledAppsEnabled /t REG_DWORD /d 00000000
+
+:: Disable News and Interests functionality.
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Dsh" /f /v AllowNewsAndInterests /t REG_DWORD /d 0
+
+:: Disable widgets auto-launching.
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Dsh" /f /v IsPrelaunchEnabled /t REG_DWORD /d 0
+
+:: Disable Windows tips.
+reg add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /f /v DisableSoftLanding /t REG_DWORD /d 1
+
+:: Disable cloud consumer account state.
+reg add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /f /v DisableConsumerAccountStateContent /t REG_DWORD /d 1
+
+:: Disable cloud-optimized content.
+reg add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /f /v DisableCloudOptimizedContent /t REG_DWORD /d 1
+
+:: Disable consumer features.
+reg add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /f /v DisableWindowsConsumerFeatures /t REG_DWORD /d 1
+
+:: Disable chat icon.
+reg add "HKLM\Software\Policies\Microsoft\Windows\Windows Chat" /f /v ChatIcon /t REG_DWORD /d 3
+
+:: Disable autoplay.
+reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v NoDriveTypeAutoRun /t REG_DWORD /d 255
+
+:: Disable Edge help tips.
+reg add "HKLM\Software\Policies\Microsoft\Windows\EdgeUI" /f /v DisableHelpSticker /t REG_DWORD /d 1
