@@ -103,3 +103,6 @@ reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /f /v
 
 :: Disable Edge help tips.
 reg add "HKLM\Software\Policies\Microsoft\Windows\EdgeUI" /f /v DisableHelpSticker /t REG_DWORD /d 1
+
+:: Disable Bing Discover from Edge
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /f /v HubsSidebarEnabled /t REG_DWORD /d 0
