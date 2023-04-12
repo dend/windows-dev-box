@@ -9,7 +9,7 @@
 	<br>
 </div>
 
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://den.dev/ukraine)
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://supportukrainenow.org/)
 
 This repository contains everything that I use to automate my Windows system setup. I had to re-install the OS on my developer box more than once, and every single time I had to set it up just right in an effort to make it work and behave the way I wanted it to. At some point I just decided to automate as much of that process as possible - this repository contains those pieces of automation.
 
@@ -19,10 +19,11 @@ This repository contains everything that I use to automate my Windows system set
 
 All scripts are located in the [`scripts`](https://github.com/dend/windows-dev-box/tree/main/scripts) folder. You will need administrator permissions to make sure that the changes stick.
 
-| Script | Description |
-|:-------|:------------|
-| `customization.bat` | A bunch of customizations to make the OS look simple and efficient. |
-| `privacy.bat`       | Settings that enhance the privacy settings of the OS.               |
+| Script                    | Description 														 										   |
+|:--------------------------|:-------------------------------------------------------------------------------------------------------------|
+| `customization.bat`       | A bunch of customizations to make the OS look simple and efficient.       							 	   |
+| `privacy.bat`             | Settings that enhance the privacy settings of the OS.                                                        |
+| `fake-mdm-enrollment.reg` | Artificial Mobile Device Management (MDM) enrollment to enable custom settings, such as blank pages in Edge. |
 
 ### Settings
 
