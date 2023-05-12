@@ -109,3 +109,12 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Edge" /f /v HubsSidebarEnabled /t REG_
 
 :: Disable the Windows 11 style context menu.
 reg add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+
+:: Remove OneDrive from pinned entries.
+reg add "HKCR\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}" /f /v System.IsPinnedToNameSpaceTree /t REG_DWORD /d 0
+
+:: Remove OneDrive from pinned entries.
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\System" /f /v DisableLogonBackgroundImage /t REG_DWORD /d 1
+
+:: Make Windows Explorer to always launch on This PC.
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /f /v LaunchTo /t REG_DWORD /d 1
