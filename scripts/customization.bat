@@ -137,3 +137,19 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "T
 
 :: Remove Meet Now icon from taskbar
 reg add "HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "HideSCAMeetNow" /t REG_DWORD /d 1 /f
+
+:: Make sure that the Print Screen button maintains its designed behavior.
+reg add "HKCU\Control Panel\Keyboard\PrintScreenKeyForSnippingEnabled" /v "HideSCAMeetNow" /t REG_DWORD /d 0 /f
+
+:: Disable lock screen slide show
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Lock Screen" /v "SlideshowEnabled" /t REG_DWORD /d 0 /f
+reg add "HKCU\Software\Microsoft\Windows NT\CurrentVersion\TileDataModel\Migration\LockScreenPinnedTiles" /v "Completed" /t REG_DWORD /d 1 /f
+
+:: Don't show start menu recommendations
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "Start_IrisRecommendations" /t REG_DWORD /d 0 /f
+
+:: Hide search in taskbar
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v "SearchboxTaskbarMode" /t REG_DWORD /d 0 /f
+
+:: Disable task view
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ShowTaskViewButton" /t REG_DWORD /d 0 /f
