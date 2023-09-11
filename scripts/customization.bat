@@ -153,3 +153,12 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Search" /v "SearchboxTas
 
 :: Disable task view
 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "ShowTaskViewButton" /t REG_DWORD /d 0 /f
+
+:: Disable taskbar flashing
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "TaskbarFlashing" /d "0" /t REG_DWORD /f
+
+:: Align taskbar to left
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "TaskbarAl" /d "0" /t REG_DWORD /f
+
+:: Disable clipboard suggested actions
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\SmartActionPlatform\SmartClipboard" /v "Disabled" /d "1" /t REG_DWORD /f
