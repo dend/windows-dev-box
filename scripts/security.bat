@@ -73,3 +73,18 @@ reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows\WCN\Registrars" /v "EnableRegi
 
 :: Disable NetBios for all interfaces
 PowerShell -Command "$key = 'HKLM:SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces'; Get-ChildItem $key | ForEach {; Set-ItemProperty -Path "^""$key\$($_.PSChildName)"^"" -Name NetbiosOptions -Value 2 -Verbose; }"
+
+:: Disable WPAD
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp" /v "DisableWpad" /t REG_DWORD /d 1 /f
+
+:: Disable SMB1
+reg add "HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "SMB1 " /t REG_DWORD /d 0 /f
+
+:: Disable remote shell
+reg add "HKLM\Software\Policies\Microsoft\Windows\WinRM\Service\WinRS" /v "AllowRemoteShellAccess " /t REG_DWORD /d 0 /f
+
+:: Don't default to automatic elevated installs
+reg add "HKLM\Software\Policies\Microsoft\Windows\Installer" /v "AlwaysInstallElevated " /t REG_DWORD /d 0 /f
+
+:: Don't default to automatic elevated installs
+reg add "HKCU\Software\Policies\Microsoft\WindowsMediaPlayer" /v "PreventCodecDownload " /t REG_DWORD /d 1 /f
