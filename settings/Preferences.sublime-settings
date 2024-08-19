@@ -1,8 +1,8 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
-	"font_face": "Cascadia Code",
-	"font_size": 13,
+	"font_face": "Monaspace Krypton",
+	"font_size": 14,
 	"spell_check": true,
 	"draw_minimap_border": true,
 	"highlight_line": true,
@@ -17,4 +17,10 @@
 	[
 		"customizations"
 	],
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"update_check": false,
 }
