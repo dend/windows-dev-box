@@ -31,7 +31,8 @@ All settings are located in the [`settings`](https://github.com/dend/windows-dev
 
 | File | Description |
 |:-----|:------------|
-| `Preferences.sublime-settings` | Settings for Sublime Text 4. |
+| `ST_Preferences.sublime-settings` | Settings for Sublime Text 4. |
+| `SM_Preferences.sublime-settings` | Settings for Sublime Merge. |
 
 ## FAQ
 
