@@ -13,7 +13,7 @@
 	"font_face": "Monaspace Krypton",
 	"font_size": 14,
 	"hardware_acceleration": "opengl",
-    "hide_tab_scrolling_buttons": true,
+    	"hide_tab_scrolling_buttons": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
