@@ -1,26 +1,27 @@
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by syntax-specific settings.
 {
-	"font_face": "Monaspace Krypton",
-	"font_size": 14,
-	"spell_check": true,
-	"draw_minimap_border": true,
-	"highlight_line": true,
-	"ensure_newline_at_eof_on_save": true,
-	"shift_tab_unindent": true,
-	"bold_folder_labels": true,
 	"adaptive_dividers": true,
-	"show_encoding": true,
-	"show_line_endings": true,
-	"hardware_acceleration": "opengl",
 	"added_words":
 	[
 		"customizations"
 	],
+	"bold_folder_labels": true,
+	"close_windows_when_empty": true,
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": true,
+	"find_in_files_side_by_side": true,
+	"font_face": "Monaspace Krypton",
+	"font_size": 14,
+	"hardware_acceleration": "opengl",
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage",
 	],
 	"index_files": true,
-	"update_check": false,
+	"shift_tab_unindent": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"spell_check": true,
+	"update_check": false
 }
