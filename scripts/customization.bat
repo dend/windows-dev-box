@@ -175,3 +175,13 @@ reg add "HKCU\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotificatio
 
 :: Disable the reminder to finish setting up the PC
 reg add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\UserProfileEngagement" /v "ScoobeSystemSettingEnabled" /d "0" /t REG_DWORD /f
+
+:: Use compact mode in file explorer
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v UseCompactMode /t REG_DWORD /d 1 /f
+
+:: Show file extensions
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v HideFileExt /t REG_DWORD /d 0 /f
+
+:: Show hidden files
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v Hidden /t REG_DWORD /d 1 /f
+
