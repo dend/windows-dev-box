@@ -149,3 +149,36 @@ PowerShell -Command "Get-AppxPackage 'SpotifyAB.SpotifyMusic' | Remove-AppxPacka
 
 :: Windows Web Experience Pack (breaks Widgets)
 PowerShell -Command "Get-AppxPackage 'MicrosoftWindows.Client.WebExperience' | Remove-AppxPackage"
+
+:: Clipchamp
+PowerShell -Command "Get-AppxPackage 'Clipchamp.Clipchamp' | Remove-AppxPackage"
+
+:: Clipchamp
+PowerShell -Command "Get-AppxPackage 'Clipchamp.Clipchamp' | Remove-AppxPackage"
+
+:: Bing Search
+PowerShell -Command "Get-AppxPackage 'Microsoft.BingSearch' | Remove-AppxPackage"
+
+:: Xbox
+PowerShell -Command "Get-AppxPackage 'Microsoft.GamingApp' | Remove-AppxPackage"
+
+:: Outlook
+PowerShell -Command "Get-AppxPackage 'Microsoft.OutlookForWindows' | Remove-AppxPackage"
+
+:: PowerAutomate
+PowerShell -Command "Get-AppxPackage 'Microsoft.PowerAutomateDesktop' | Remove-AppxPackage"
+
+:: Xbox TCUI
+PowerShell -Command "Get-AppxPackage 'Microsoft.Xbox.TCUI' | Remove-AppxPackage"
+
+:: Xbox GameBar
+PowerShell -Command "Get-AppxPackage 'Microsoft.XboxGamingOverlay' | Remove-AppxPackage"
+
+:: Xbox Speech-To-Text
+PowerShell -Command "Get-AppxPackage 'Microsoft.XboxSpeechToTextOverlay' | Remove-AppxPackage"
+
+:: QuickAssist
+PowerShell -Command "Get-AppxPackage 'MicrosoftCorporationII.QuickAssist' | Remove-AppxPackage"
+
+:: Copilot
+PowerShell -Command "Get-AppxPackage 'Microsoft.Copilot' | Remove-AppxPackage"
