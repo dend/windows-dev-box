@@ -179,3 +179,6 @@ PowerShell -Command "Get-AppxPackage 'MicrosoftCorporationII.QuickAssist' | Remo
 
 :: Copilot
 PowerShell -Command "Get-AppxPackage 'Microsoft.Copilot' | Remove-AppxPackage"
+
+:: Teams
+PowerShell -Command "Get-AppxPackage 'MSTeams' | Remove-AppxPackage"
