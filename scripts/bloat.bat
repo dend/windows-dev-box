@@ -153,9 +153,6 @@ PowerShell -Command "Get-AppxPackage 'MicrosoftWindows.Client.WebExperience' | R
 :: Clipchamp
 PowerShell -Command "Get-AppxPackage 'Clipchamp.Clipchamp' | Remove-AppxPackage"
 
-:: Clipchamp
-PowerShell -Command "Get-AppxPackage 'Clipchamp.Clipchamp' | Remove-AppxPackage"
-
 :: Bing Search
 PowerShell -Command "Get-AppxPackage 'Microsoft.BingSearch' | Remove-AppxPackage"
 
