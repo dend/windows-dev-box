@@ -1,0 +1,8 @@
+{
+	"always_show_command_status": true,
+	"font_face": "Monaspace Krypton",
+	"font_size": 11,
+	"hardware_acceleration": "opengl",
+	"side_bar_layout": "columns",
+	"theme": "auto"
+}

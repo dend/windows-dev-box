@@ -1,0 +1,29 @@
+{
+	"adaptive_dividers": true,
+	"added_words":
+	[
+		"customizations"
+	],
+	"bold_folder_labels": true,
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"draw_minimap_border": true,
+	"ensure_newline_at_eof_on_save": true,
+	"find_in_files_side_by_side": true,
+	"font_face": "Monaspace Krypton",
+	"font_size": 11,
+	"hardware_acceleration": "opengl",
+        "hide_tab_scrolling_buttons": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"shift_tab_unindent": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"spell_check": true,
+	"theme": "auto",
+}
