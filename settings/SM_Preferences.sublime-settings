@@ -4,5 +4,5 @@
 	"font_size": 11,
 	"hardware_acceleration": "opengl",
 	"side_bar_layout": "columns",
-	"theme": "auto"
+	"theme": "Merge Dark.sublime-theme",
 }
